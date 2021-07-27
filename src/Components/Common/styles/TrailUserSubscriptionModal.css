@@ -1,0 +1,26 @@
+.takeSubscriptionModalContainer .modal-content{
+    width: 140%;
+}
+
+.takeSubscriptionModalContainer .modal-header {
+    border-bottom: none;
+}
+
+.takeSubscriptionBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.takeSubscriptionButton{
+    background: radial-gradient(246.85% 2908.29% at -120.08% 147.3%, #747AF0 0%, #444AAA 100%);
+    background: -moz-radial-gradient(246.85% 2908.29% at -120.08% 147.3%, #747AF0 0%, #444AAA 100%);
+    background: -webkit-radial-gradient(246.85% 2908.29% at -120.08% 147.3%, #747AF0 0%, #444AAA 100%);
+    border-radius: 33px;
+    border: none;
+    color: #fff;
+    font-family: "Gilroy-Bold";
+    font-size: 16px;
+    padding: 10px 10px;
+    margin-bottom: 5%;
+}

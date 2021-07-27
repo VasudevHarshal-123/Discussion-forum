@@ -1,0 +1,73 @@
+
+.textEditorCommand {
+    display: flex;
+    flex-direction: row;
+    background: #eeeeee;
+    padding: 1.5% 2%;
+}
+
+.textEditorCommand > .verticalLine {
+    border: 1px solid #cccccc;
+    background: #cccccc;
+    margin-right: 2%;
+}
+
+.textEditorBold {
+    font-weight: 900;    
+}
+
+.textEditorItalic{
+    font-style: italic;
+}
+
+.textEditorUnderLine {
+    text-decoration: underline;
+}
+
+  
+.RichEditor-editor .public-DraftEditorPlaceholder-root,
+.RichEditor-editor .public-DraftEditor-content {
+    padding: 1%
+}
+
+
+.RichEditor-editor .public-DraftStyleDefault-pre {
+font-family: "Inconsolata", "Menlo", "Consolas", monospace;
+margin: 0px !important;
+}
+
+.RichEditor-controls {
+font-family: "Helvetica", sans-serif;
+font-size: 18px;
+user-select: none;
+}
+
+.RichEditor-styleButton {
+color: #000;
+cursor: pointer;
+margin-right: 16px;
+padding: 2px 0;
+display: inline-block;
+}
+
+.RichEditor-activeButton {
+color: #5890ff;
+}
+
+.RichEditor-activeButton > img {
+  border: 1px solid #5890ff;
+}
+
+.RichEditor-root  pre , .RichEditor-root  code, .RichEditor-root  p, .RichEditor-root  ol, .RichEditor-root  ul {
+margin-top: 0px;
+padding-top: 0px;
+margin-bottom: 0px;
+padding-bottom: 0px;
+} 
+
+.public-DraftEditorPlaceholder-root {
+    font-family: "Gilroy-Medium";
+    font-size: 16px;
+    line-height: 19px;
+    color: #BDBDBD;
+}

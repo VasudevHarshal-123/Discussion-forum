@@ -1,0 +1,123 @@
+.secondaryThreadContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 84%;
+}
+
+.secondaryThreadItemContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.secondaryThreadHorizontalLine {
+    width: 90%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background: #ebebee;
+    border: 1px solid #f0eeee;
+}
+
+.secondaryVotingContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline ;
+    width: fit-content;
+}
+
+.secondaryVotingContainer > button {
+    border: none;
+    background: none;
+    padding: 0px;
+}
+
+.upvoteSecondaryThreadIcon{
+    margin-right: 10px;
+}
+
+.upvoteSecondaryThreadIcon > img{
+    padding-bottom: 7px;
+    width: 14px;
+}
+
+.upvoteSecondaryThreadText{ 
+    font-family: "Gilroy-Medium";
+    font-size: 16px;
+    color: #828282;
+}
+
+.secondaryTotalVote{
+    font-family: "Gilroy-Medium";
+    font-size: 16px;
+    margin-right: 10px;
+    color: #828282;
+}
+
+.secondaryVotingContainer:hover div, .secondaryVotingContainer:hover button {
+    color: #5A65EF;
+}
+
+
+.secondaryThreadVoted{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+
+.secondaryThreadVoted > button {
+    border: none;
+    background: none;
+    padding: 0px;
+}
+
+.secondaryThreadVoted img {
+    width: 16px;
+}
+
+.secondaryThreadVoted div, .secondaryThreadVoted button{
+    font-family: 'Gilroy-Bold';
+    color: #444BAB;
+    font-size: 16px;
+}
+
+.secondaryThreadName{
+    font-family: "Gilroy-Bold";
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.secondaryQuestionContainer  p, .secondaryQuestionContainer  ul, .secondaryQuestionContainer  ol,
+.secondaryQuestionContainer  li, .secondaryQuestionContainer  pre, .secondaryQuestionContainer  code{
+    font-family: "Gilroy-Medium";
+    font-size: 16px;
+    line-height: 23px;
+    color: #333333;
+    letter-spacing: 0.04rem;
+    word-wrap: break-word;
+    margin: 0px;
+    padding-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+.discussionSecondaryThreadActive{
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    animation: secondary-discussion-background-fade 30s;
+}
+
+@keyframes secondary-discussion-background-fade {
+    0% {
+        background: rgba(68, 75, 171, 0.1);
+    }
+    100%{
+        background: fff;
+    }
+}

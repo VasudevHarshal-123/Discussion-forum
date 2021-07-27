@@ -1,0 +1,171 @@
+.primaryThreadContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.votingContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.votingContainer > div {
+    margin-bottom: 10px;
+}
+
+.votingContainer > .upVotingIcon > img {
+    width: 28px;
+}
+
+.votingContainer > .downVotingIcon > img {
+    width: 28px;
+}
+
+.votingContainer > .totalVote{
+    font-family: "Gilroy-Medium";
+    font-size: 20px;
+    line-height: 16px;
+    color: #000000;
+    text-align: center;
+}
+
+.upVotingIcon:hover{
+    cursor: pointer;
+}
+
+.downVotingIcon:hover {
+    cursor: pointer;
+}
+
+.primaryContentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 95.5%;
+    margin-left: 20px;
+}
+
+.personNameContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.personNameContainer > .personName {
+    font-family: "Gilroy-Bold";
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin: 0px;
+}
+
+.personNameContainer > .upArrowIcon:hover {
+    cursor: pointer;
+}
+
+.questionContainer p, .questionContainer ol, .questionContainer ul,
+.questionContainer li, .questionContainer code, .questionContainer pre{
+    font-family: "Gilroy-Medium";
+    font-size: 16px;
+    line-height: 23px;
+    color: #4B4F60;
+    letter-spacing: 0.05rem;
+}
+
+.commentAndReadText{
+    font-family: "Gilroy-Medium";
+    font-size: 16px;
+    line-height: 23px;
+    color: #444BAB;
+    margin-left: 1%;
+    margin-right: 2%;
+}
+
+.clientOnTrialTextFont{
+    color: #BDBDBD;
+}
+
+.commentAndReadText:hover {
+    cursor: pointer;
+}
+
+.commentAndReadIcon:hover{
+    cursor: pointer;
+}
+
+.horizontalLine{
+    background: #dadada;
+    border: 1px solid #DADADA;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.discussionPrimaryThreadActive {
+    animation: primary-discussion-background-fade 30s;
+}
+
+@keyframes primary-discussion-background-fade {
+    0% {
+        background: rgba(68, 75, 171, 0.1);
+    }
+    100%{
+        background: fff;
+    }
+}
+
+.modalTextEditorContainer {
+    background: #fff;
+    border: 1px solid #000;
+    font-family: "Georgia", serif;
+    width: 100%;
+}
+
+.modalTextEditor{
+    border-top: 1px solid #ddd;
+    cursor: text;
+    font-size: 1rem;
+}
+
+.modalTextEditor .DraftEditor-editorContainer{
+    height: 10rem;
+    overflow: scroll;
+}
+
+.primaryThreadTextEditorInputContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.primaryThreadTextEditorInputContainer > .RichEditor-root{
+    width: 100%;
+}
+
+.primaryThreadTextEditorInputContainer .public-DraftEditor-content{
+    padding-right: 50px;
+}
+
+
+.primaryThreadTextEditor {
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+}
+
+.inlinePostThreadButton{
+    border: none;
+    background: transparent;
+    z-index: 100;
+    margin-left: -40px;
+}
