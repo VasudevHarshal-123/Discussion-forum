@@ -18,9 +18,9 @@ class DiscussionMain extends React.Component {
         }).link(this)
     }
 
-    onClickPostDoubtButton = (htmlMessage) => {
+    onClickPostDoubtButton = async (htmlMessage) => {
         if (htmlMessage !== "<p><br></p>") {
-            handlePrimaryThreadQuestion(htmlMessage);
+            await handlePrimaryThreadQuestion(htmlMessage);
         }
     }
 
@@ -46,12 +46,13 @@ class DiscussionMain extends React.Component {
         )
     }
 
-    componentDidMount() {
+    async componentDidMount() {
         let discussionId = store.get('discussionId');
         let discussionType = store.get('discussionType');
+        console.log("ok")
         if (discussionId && discussionType) {
             store.set('discussion', []);
-            getDiscussionForumContent();
+            await getDiscussionForumContent();
         }
     }
 
@@ -61,7 +62,7 @@ class DiscussionMain extends React.Component {
         store.set('discussionType', null);
     }
 
-    componentDidUpdate(prevProps, prevState) {
+    async componentDidUpdate(prevProps, prevState) {
         let prevDiscussionId = prevState.store.discussionId;
         let prevDiscussionType = prevState.store.discussionType;
         let currDiscussionId = store.get('discussionId');
@@ -69,7 +70,7 @@ class DiscussionMain extends React.Component {
         if (currDiscussionType !== prevDiscussionType || currDiscussionId !== prevDiscussionId) {
             if (currDiscussionId && currDiscussionType) {
                 store.set('discussion', []);
-                getDiscussionForumContent();
+                await getDiscussionForumContent();
             }
             store.set('latestPrimaryThreadInsertedId', null);
             store.set('latestSecondaryThreadInsertId', null);

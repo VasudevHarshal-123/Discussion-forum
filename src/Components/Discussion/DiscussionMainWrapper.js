@@ -25,12 +25,10 @@ export class DiscussionMainWrapper extends Component {
 
     setDiscussionForumData = () =>{
         let queryObject = queryString.parse(window.location.search);
-        console.log("sssss",queryObject);
+        console.log("Whaaaat",queryObject);
         store.set('discussionType', DISCUSSION_TYPE.SUBTOPIC_VIDEO);
-        // store.set('discussionId', queryObject.subtopicId);
-        // store.set('emailId', queryObject.emailId);
-        store.set('discussionId', 1);
-        store.set('emailId', 'imh10036.15@bitmesra.ac.in');
+        store.set('discussionId', queryObject.subtopicId);
+        store.set('emailId', queryObject.emailId);
     }
 
     componentDidMount() {

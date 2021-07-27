@@ -43,9 +43,9 @@ class DiscussionPrimaryThread extends React.Component {
         }
     }
 
-    handleSecondaryThreadPost = (htmlMessage) => {
+    handleSecondaryThreadPost = async(htmlMessage) => {
         if (htmlMessage !== "<p><br></p>") {
-            handleSecondaryThreadQuestion(this.props.data.id, htmlMessage);
+            await handleSecondaryThreadQuestion(this.props.data.id, htmlMessage);
         }
         this.handleOnClickReadTheThread();
     }

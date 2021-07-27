@@ -24,9 +24,9 @@ class DiscussionSecondaryThread extends React.Component {
         this.setState({isModalOpen: !this.state.isModalOpen});
     }
 
-    handlSecondaryThreadPost = (htmlMessage) => {
+    handlSecondaryThreadPost = async (htmlMessage) => {
         if(htmlMessage !== "<p><br></p>"){
-            handleSecondaryThreadQuestion(this.props.primaryId, htmlMessage);
+            await handleSecondaryThreadQuestion(this.props.primaryId, htmlMessage);
         }
     }
 
@@ -34,7 +34,7 @@ class DiscussionSecondaryThread extends React.Component {
         return <TrailUserSubscriptionModal isOpen={this.state.isModalOpen} toggleModal={this.toggleModal}/>
     }
 
-    handleQuestionSubmit = (event) => {
+    handleQuestionSubmit = async (event) => {
         event.preventDefault();
         let question = event.target[0].value;
         let primaryId = this.props.primaryId;
@@ -42,7 +42,7 @@ class DiscussionSecondaryThread extends React.Component {
         if(isUserOnFreeTrial){
             sweetAlertWarning();
         }else{
-            handleSecondaryThreadQuestion(primaryId, question);
+           await handleSecondaryThreadQuestion(primaryId, question);
         }
         event.target[0].value = "";
     }
